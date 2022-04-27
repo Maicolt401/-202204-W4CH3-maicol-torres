@@ -1,27 +1,42 @@
-# Week 4 - Challenge 3
+## Componentes
 
-## Teléfono React
+# App
 
-Aquí tienes la maquetación HTML/CSS de una aplicación, tendrás que programarla en React.
+- Renderiza los componentes de Info
+- Renderizar el component Display
+- Renderizar el componente Actions
+- Renderizar el componente Keyboard
+- Enviar el estado de la llamada a Info
+- Enviar los números marcados a Display.
+- Enviar las acciones a todos los botones de Keyboard y Actions.
+- Recibir un maximo de 9 numeros ingresados
 
-- Se debe poder escribir un número de teléfono clicando en los botones numéricos. La tecla borrar puede borrar el último dígito o borrar el número completo, como prefieras.
-- Sólo se verá o el botón Llamar o el botón Colgar, nunca los dos a la vez.
-- No se puede introducir un número de más de 9 cifras.
-- El botón Llamar sólo se puede pulsar si el número tiene 9 cifras. Cuando tenga 9 cifras el botón debe tener la clase "active".
-- El mensaje superior "Llamando..." sólo aparece cuando se pulsa el botón "Llamar" y mientras dure la llamada. Usa la clase "off" para controlar su visibilidad (el elemento HTML correspondiente debe seguir estando, aunque no se vea).
-- Al pulsar el botón "Llamar", éste debe desaparecer del DOM y debe aparecer en su lugar el botón "Colgar". El teclado tiene que quedar deshabilitado.
-- Al pulsar el botón "Colgar", éste debe desaparecer y debe aparecer en su lugar el botón "Llamar". El teclado tiene que habilitarse. Además, se debe borrar el número de teléfono.
-- Si no ocurre nada tras cinco segundos de llamada, ésta se debe colgar automáticamente.
+# Info
 
-Separa todo en los siguientes componentes:
+-Renderizar el estado de la llamada dependiendo de si se ha llamado o no
 
-- Info
-- Display
-- Actions
-  - Action
-- Keyboard
-  - Key
+# Display
 
-Guarda los estados comunes en un context.
+-Renderizar los números marcados que reciba.
 
-Entrega también un listado de responsabilidades.
+# Actions
+
+-Renderiza la caja donde se encuentra el display junto los botones de llamar o colgar
+
+# Action
+
+- Renderizar el botón que reciba
+- Que ejecute un accion al recibir un click con el evento
+
+# Keyboard
+
+-renderizar los números de llamada y el botón delete.
+
+· Key Renderiza el botón que reciba que puede ser un número o delete. Ejecuta una acción recibida mediante un evento de click.
+
+Datos y acciones sobre los datos
+Listado de los números picados. Añadir y eliminar números de la lista de números picados.
+
+Estado de la llamada que puede ser 'calling' o no. Modificar el estado de la llamada para que sea 'calling' o no.
+
+Listado del contenido de los botones de llamada, que puede ser números y el delete. (no es de estado)
